@@ -5,7 +5,7 @@ This landing page was originally intended for one of my clients who unexpectedly
 <div>
 <br />
     <a href="https://lagunea.buildwithjasim.tech/">
-      <img src="https://raw.githubusercontent.com/mo-jasim/Laguna-Landing-Page/main/public/landing.png" alt="Project Banner">
+      <img src="landing.png" alt="Project Banner">
     </a>
 </div>
 
