@@ -22,13 +22,9 @@ sections.
 
 **Smooth Animations**: Complex CSS for fluid animations and eye-catching effects.
 
-**Seamless Navigation**: Offers a smooth user experience with intuitive navigation and scrolling.
-
 **Optimized Performance**: Built for fast loading and an optimized experience.
 
 **Pixel Perfect Design**: Ensures flawless responsiveness across all devices and screen sizes.
-
-**Stunning Toast**: Provides a scrumptious Pop-up to understand the error and success rate via message.
 
 ## <a name="quick-start">Quick Start</a>
 
