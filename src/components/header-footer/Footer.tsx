@@ -3,11 +3,16 @@ import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaPinterest } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import { FiCoffee } from "react-icons/fi";
 
 const Footer = () => {
-  const linkedin = () =>{
-    window.open('https://www.linkedin.com/in/mohammad-jasim23/', '_blank');
-  } 
+  const jasimWeb = () => {
+    window.open("https://jasim.io/", "_blank");
+  };
+
+  const azadWeb = () => {
+    window.open("https://www.linkedin.com/in/modest-azad/", "_blank");
+  };
 
   return (
     <footer className="w-full bg-[#0A2724] text-white py-[50px] max-md:px-[20px]">
@@ -35,12 +40,24 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="flex flex-col gap-2">
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Home</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">About Us</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Contact Us</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Blogs</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Privacy Policy</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Terms & Conditions</li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Home
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                About Us
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Contact Us
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Blogs
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Privacy Policy
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Terms & Conditions
+              </li>
             </ul>
           </div>
 
@@ -49,12 +66,24 @@ const Footer = () => {
               Our Services
             </h3>
             <ul className="flex flex-col gap-2">
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Excursions</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Accommodations</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Transportation</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Group & Corporate</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Honeymoon & Wedding</li>
-              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">Local Cuisine</li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Excursions
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Accommodations
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Transportation
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Group & Corporate
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Honeymoon & Wedding
+              </li>
+              <li className="text-[15px] cursor-pointer border-b border-[#0a2724] hover:border-b-1 hover:border-[#ffff]">
+                Local Cuisine
+              </li>
             </ul>
           </div>
 
@@ -75,10 +104,23 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="flex max-md:flex-col max-md:items-center max-md:gap-4 items-end justify-between mt-10 border-t border-[#ffffff58]">
-          <p className="text-center text-[15px] mt-10">
-            © 2021 All Rights Reserved - Designed by{" "}
-            <span className="text-[#40E0D0] cursor-pointer" onClick={linkedin}>Jasim Ansari</span>
-          </p>
+          <div className="flex items-end max-md:items-center justify-center gap-2">
+            <FiCoffee className="text-[20px] cursor-pointer mb-[2px] max-md:hidden" />
+
+            <div className="text-[15px] max-md:text-center mt-10">
+              Developed by{" "}
+              <span
+                className="text-[#40E0D0] cursor-pointer"
+                onClick={jasimWeb}
+              >
+                Mohammad Jasim
+              </span>{" "}
+              & Designed by{" "}
+              <span className="text-[#40E0D0] cursor-pointer" onClick={azadWeb}>
+                Md Azad
+              </span>
+            </div>
+          </div>
 
           <img src="/payments.png" alt="" />
         </div>
